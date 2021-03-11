@@ -1,19 +1,22 @@
 package ua.donnu.ta;
 
-import ua.donnu.ta.square.Square;
+import ua.donnu.ta.TriangularPrism.TriangularPrism;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Runner {
 
     public static void main(String[] args) {
-
-        int result = 0;
-
-        int sideFirst = 2;
-        int sideSecond = 4;
-
-        result = Square.area(sideFirst, sideSecond);
-
+        double result = TriangularPrism.surfaceArea(2,2,2,5);
         System.out.println(result);
+
+        double result1 = TriangularPrism.Volume(2,2,2,5);
+        System.out.println(result1);
+
+
+
+
     }
 
 }
